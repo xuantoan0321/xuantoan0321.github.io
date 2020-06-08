@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Xuan Toan</title>
+	<link href="css/main.css" rel="stylesheet">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link href="css/fullpage.min.css" rel="stylesheet">
+	<script src="js/fullpage.min.js"></script>
+	<link href="css/animista.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader" id="loader"></div>
+	<div class="header" id="header">
+		<div class="logo">
+			<a href="#" id="logo"><img src="images/logo_text.png"></a>
+			<a href="#" id="logo_2" class="off"><img src="images/logo_text.png"></a>
+		</div>
+		<div class="video">
+			<a href="#" id="video_btt_1">VIdEO</a>
+		</div>
+	</div>
+	<div class="container" id="container">
+		<div class="text_box">
+			<div class="v1"></div>
+			<div class="corner"></div>
+			<div class="text"><a href="#">ABOUT</a></div>
+			<div class="sub_box">
+				<div class="v2"></div>
+				<div class="text_subbox">
+					<div class="corner"></div>
+					<div class="text">
+						<a href="#" id="inside">INSIdE XUANTOAN</a>
+						<a href="#" id="inside_2" class="off">INSIdE XUANTOAN</a>
+					</div>
+				</div>
+				<div class="text_subbox_2">
+					<div class="corner"></div>
+					<div class="text"><a href="#">EdUCATION</a></div>
+					<div class="overlay">
+						<div class="content">
+							<ul>
+								<li>
+									SCHOOLS
+									<ul>
+										<li style="padding-top: 35px">The Asian International School</li><br>
+										<li>FPT University</li>
+									</ul>
+								</li>
+								<li>
+									LANGUAGE
+									<ul>
+										<li style="padding-top: 35px">English: fluent</li><br>
+										<li>Vietnamese: native</li><br>
+										<li>Korean: basic</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="text_subbox_3">
+					<div class="corner"></div>
+					<div class="text"><a href="#">AESTHETIC</a></div>
+					<div class="overlay">
+						<div class="content">
+							<ul>
+								<li>
+									SKILLS
+									<ul>
+										<li style="padding-top: 35px">Creator</li><br>
+										<li>Motion graphic</li><br>
+										<li>UXUI design</li><br>
+										<li>Layout</li><br>
+										<li>Typography</li><br>
+										<li>Branding</li><br>
+										<li>Sketching</li><br>
+										<li>Manipulation</li>
+									</ul>
+								</li>
+								<li>
+									TOOLS
+									<ul>
+										<li style="padding-top: 35px">Illustrator: 70%</li><br>
+										<li>After Effects: 60%</li><br>
+										<li>Adobe XD: 80%</li><br>
+										<li>Photoshop: 60%</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text_box_2">
+			<div class="corner"></div>
+			<div class="text">
+				<a href="#" id="work_btt">WORK</a>
+				<a href="#" id="work_btt_2" class="off">WORK</a>
+			</div>
+		</div>
+		<div class="text_box_3">
+			<div class="corner"></div>
+			<div class="text"><a href="#" id="contact_btt">CONTACT</a></div>
+		</div>
+	</div>
+<div id="fullpage">
+	<video class="bg" id="bg_1" preload="auto" autoplay="true" muted onended="run()">
+    	<source src="videos/bg_index.mp4" type="video/mp4"/>
+    </video>
+	<video class="bg" id="bg_2" preload="none" loop autoplay="true" muted poster="videos/bg_index_2.png">
+    	<source src="videos/bg_index_2.mp4" type="video/mp4"/>
+    </video>
+	<video class="inside_bg" id="inside_bg" preload="none" loop autoplay="true" muted poster="images/bg_inside.png">
+    	<source src="videos/bg_inside.mp4" type="video/mp4"/>
+    </video>
+	<video class="work_bg" id="work_bg" preload="none" loop autoplay="true" muted poster="images/bg_work.png">
+    	<source src="videos/bg_work.mp4" type="video/mp4"/>
+    </video>
+	<div class="section" id="section0">
+		<div class="contact_bg" id="contact_bg"></div>
+		<div class="contact" id="contact">
+			<div class="content">
+				<div class="logo"><img src="images/logo_text.png"></div>
+				<div class="text">
+					Hi, this is the official contact of Xuantoan. For everything you need, feel free to contact me at anytime via<br> email realtxavage@gmail.com or by cell phone (+84) 937 027 338.
+				</div>
+				<div class="cancel"><a href="#" id="cancel"><img src="images/cancel.png"></a></div>
+				<div class="icon">
+					Contact me
+					<ul>
+						<li><a href="#"><img src="images/ic_be.png" style="margin-right: 13px"></a></li>
+						<li><a href="#"><img src="images/ic_fb.png" style="margin-right: 13px"></a></li>
+						<li><a href="#"><img src="images/ic_g.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="vit-layer-click" id="vit-layer-click" onclick="document.getElementById('face').src='images/facetoan.gif'"></a>
+		<div class="inside_bg_box" id="inside_bg_box">
+			<div class="vit-layer" id="vit-layer"></div>
+		</div>
+		<div class="inside_bg_info" id="inside_bg_info"></div>
+		<div class="info" id="info">
+			<div class="content">
+				<div class="face"><img src="images/facetoan.gif" id="face"></div>
+				<div class="text">
+					Welcome to the new home of xuantoan.com!<br>
+					I am a visual and motion graphic designer,<br>
+					born on 21st March 1998. I have six months’ experience working<br>
+					as a creative designer in a Creative Production and Studio.
+				</div>
+				<div class="cancel"><a href="#" id="cancel_2"><img src="images/cancel.png"></a></div>
+				<div class="watch"><a href="#" id="video_btt_2"><img src="images/watch.png"></a></div>
+			</div>
+		</div>
+		<div class="video_info_2" id="video_info_2"></div>
+		<div class="video_content_2" id="video_content_2">
+			<div class="content">
+				<div class="video">
+					<iframe frameborder="0" width="100%" height="100%" id="video_1"
+						src="https://player.vimeo.com/video/351344967?title=0&byline=0&portrait=0">
+					</iframe>
+				</div>
+				<div class="cancel"><a href="#" id="cancel_5"><img src="images/cancel.png"></a></div>
+			</div>
+		</div>
+		<a href="#" class="camap-layer-click" id="camap-layer-click"></a>
+		<div class="work_bg_box" id="work_bg_box">
+			<div class="camap-layer" id="camap-layer"></div>
+		</div>
+		<div class="work_bg_work" id="work_bg_work"></div>
+		<div class="work" id="work">
+			<div class="content">
+				<div class="text">
+					EXPLORE PROJECTS
+				</div>
+				<div class="icon">
+					<img src="images/so_hot.png" class="off" id="sohot_ic">
+					<img src="images/enod.png" class="off" id="enod_ic">
+					<img src="images/esl.png" class="off" id="esl_ic">
+				</div>
+				<div class="menu_1">
+					<a href="work_1.html" id="sohot">SO HOT</a>
+				</div>
+				<div class="menu_2">
+					<a href="work_3.html" id="enod">ENOd</a>
+				</div>
+				<div class="menu_3">
+					<a href="work_2.html" id="esl">ESL</a>
+				</div>
+				<div class="cancel"><a href="#" id="cancel_3"><img src="images/cancel.png"></a></div>
+			</div>
+		</div>
+		<div class="video_info" id="video_info"></div>
+		<div class="video_content" id="video_content">
+			<div class="content">
+				<div class="video">
+					<iframe frameborder="0" width="100%" height="100%" id="video_2"
+						src="https://player.vimeo.com/video/351344967?title=0&byline=0&portrait=0">
+					</iframe>
+				</div>
+				<div class="cancel"><a href="#" id="cancel_4"><img src="images/cancel.png"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" id="section2">
+		<div class="footer">
+			<div class="logo_text">
+				<img src="images/logo_text.png">
+			</div>
+			<div class="text_box">
+				XUANTOAN, born in Ho Chi Minh city, Vietnam.<br>
+				<ul>
+					<li><a href="#"><img src="images/ic_be.png"></a></li>
+					<li><a href="#"><img src="images/ic_fb.png"></a></li>
+					<li><a href="#"><img src="images/ic_g.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Full Page-->
+<script type="text/javascript">
+  	var myFullpage = new fullpage('#fullpage', {
+      	verticalCentered: true
+  	});
+</script>
+
+<!--Contact-->
+<script type="text/javascript">
+	$("#contact_btt").click(function(){
+		$("#contact_bg").removeClass("scale-down-ver-center");
+		$("#contact_bg").addClass("scale-up-ver-center");
+		$("#contact_bg").show();
+		$("#contact").fadeIn(1300);
+		$("#header").fadeOut();
+		$("#container").fadeOut();
+	});
+	
+	$("#cancel").click(function(){
+		$("#contact_bg").removeClass("scale-up-ver-center");
+		$("#contact_bg").addClass("scale-down-ver-center");
+		$("#contact").fadeOut(300);
+		$("#header").fadeIn();
+		$("#container").fadeIn();
+	});
+</script>
+	
+<!--Main -> Inside - Work-->
+<script type="text/javascript">
+	$("#inside").click(function(){
+		$("#bg_2").addClass("slide-left");
+		$("#bg_2").removeClass("slide-right");
+		$("#bg_2").removeClass("slide-left-2");
+		$("#bg_2").removeClass("slide-right-2");
+		$("#bg_2").removeClass("slide-left-3");
+		$("#bg_2").removeClass("slide-right-3");
+		
+		$("#inside_bg").addClass("slide-left");
+		$("#inside_bg").removeClass("slide-right");
+		$("#inside_bg").removeClass("slide-left-2");
+		$("#inside_bg").removeClass("slide-right-2");
+		$("#inside_bg").removeClass("slide-left-3");
+		$("#inside_bg").removeClass("slide-right-3");
+		
+		$("#inside_bg_box").addClass("slide-left");
+		$("#inside_bg_box").removeClass("slide-right");
+		$("#inside_bg_box").removeClass("slide-left-2");
+		$("#inside_bg_box").removeClass("slide-right-2");
+		$("#inside_bg_box").removeClass("slide-left-3");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		
+		$("#work_bg").addClass("slide-left");
+		$("#work_bg").removeClass("slide-right");
+		$("#work_bg").removeClass("slide-left-2");
+		$("#work_bg").removeClass("slide-right-2");
+		$("#work_bg").removeClass("slide-left-3");
+		$("#work_bg").removeClass("slide-right-3");
+		
+		$("#work_bg_box").addClass("slide-left");
+		$("#work_bg_box").removeClass("slide-right");
+		$("#work_bg_box").removeClass("slide-left-2");
+		$("#work_bg_box").removeClass("slide-right-2");
+		$("#work_bg_box").removeClass("slide-left-3");
+		$("#work_bg_box").removeClass("slide-right-3");
+		
+		$("#vit-layer-click").show();
+		$("#camap-layer-click").hide();
+		
+		$("#logo").removeClass("off");
+		$("#logo_2").addClass("off");
+		
+		$("#inside").removeClass("off");
+		$("#inside_2").addClass("off");
+		
+		$("#work_btt").addClass("off");
+		$("#work_btt_2").removeClass("off");
+	});
+</script>
+	
+<!--Main - Inside -> Work-->
+<script type="text/javascript">
+	$("#work_btt_2").click(function(){
+		$("#bg_2").removeClass("slide-left");
+		$("#bg_2").removeClass("slide-right");
+		$("#bg_2").removeClass("slide-left-2");
+		$("#bg_2").removeClass("slide-right-2");
+		$("#bg_2").addClass("slide-left-3");
+		$("#bg_2").removeClass("slide-right-3");
+		
+		$("#inside_bg").removeClass("slide-left");
+		$("#inside_bg").removeClass("slide-right");
+		$("#inside_bg").removeClass("slide-left-2");
+		$("#inside_bg").removeClass("slide-right-2");
+		$("#inside_bg").addClass("slide-left-3");
+		$("#inside_bg").removeClass("slide-right-3");
+		
+		$("#inside_bg_box").removeClass("slide-left");
+		$("#inside_bg_box").removeClass("slide-right");
+		$("#inside_bg_box").removeClass("slide-left-2");
+		$("#inside_bg_box").removeClass("slide-right-2");
+		$("#inside_bg_box").addClass("slide-left-3");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		
+		$("#work_bg").removeClass("slide-left");
+		$("#work_bg").removeClass("slide-right");
+		$("#work_bg").removeClass("slide-left-2");
+		$("#work_bg").removeClass("slide-right-2");
+		$("#work_bg").addClass("slide-left-3");
+		$("#work_bg").removeClass("slide-right-3");
+		
+		$("#work_bg_box").removeClass("slide-left");
+		$("#work_bg_box").removeClass("slide-right");
+		$("#work_bg_box").removeClass("slide-left-2");
+		$("#work_bg_box").removeClass("slide-right-2");
+		$("#work_bg_box").addClass("slide-left-3");
+		$("#work_bg_box").removeClass("slide-right-3");
+		
+		$("#vit-layer-click").hide();
+		$("#camap-layer-click").show();
+		
+		$("#logo").addClass("off");
+		$("#logo_2").removeClass("off");
+		
+		$("#inside").addClass("off");
+		$("#inside_2").removeClass("off");
+		
+		$("#work_btt").addClass("off");
+		$("#work_btt_2").removeClass("off");
+	});
+</script>
+	
+<!--Main -> Inside -> Work-->
+<script type="text/javascript">
+	$("#work_btt").click(function(){
+		$("#bg_2").removeClass("slide-left");
+		$("#bg_2").removeClass("slide-right");
+		$("#bg_2").addClass("slide-left-2");
+		$("#bg_2").removeClass("slide-right-2");
+		$("#bg_2").removeClass("slide-left-3");
+		$("#bg_2").removeClass("slide-right-3");
+		
+		$("#inside_bg").removeClass("slide-left");
+		$("#inside_bg").removeClass("slide-right");
+		$("#inside_bg").addClass("slide-left-2");
+		$("#inside_bg").removeClass("slide-right-2");
+		$("#inside_bg").removeClass("slide-left-3");
+		$("#inside_bg").removeClass("slide-right-3");
+		
+		$("#inside_bg_box").removeClass("slide-left");
+		$("#inside_bg_box").removeClass("slide-right");
+		$("#inside_bg_box").addClass("slide-left-2");
+		$("#inside_bg_box").removeClass("slide-right-2");
+		$("#inside_bg_box").removeClass("slide-left-3");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		
+		$("#work_bg").removeClass("slide-left");
+		$("#work_bg").removeClass("slide-right");
+		$("#work_bg").addClass("slide-left-2");
+		$("#work_bg").removeClass("slide-right-2");
+		$("#work_bg").removeClass("slide-left-3");
+		$("#work_bg").removeClass("slide-right-3");
+		
+		$("#work_bg_box").removeClass("slide-left");
+		$("#work_bg_box").removeClass("slide-right");
+		$("#work_bg_box").addClass("slide-left-2");
+		$("#work_bg_box").removeClass("slide-right-2");
+		$("#work_bg_box").removeClass("slide-left-3");
+		$("#work_bg_box").removeClass("slide-right-3");
+		
+		$("#vit-layer-click").hide();
+		$("#camap-layer-click").show();
+		
+		$("#logo").addClass("off");
+		$("#logo_2").removeClass("off");
+		
+		$("#inside").addClass("off");
+		$("#inside_2").removeClass("off");
+		
+		$("#work_btt").removeClass("off");
+		$("#work_btt_2").addClass("off");
+	});
+</script>
+	
+<!--Main <- Inside - Work-->
+<script type="text/javascript">
+	$("#logo").click(function(){
+		$("#bg_2").removeClass("slide-left");
+		$("#bg_2").addClass("slide-right");
+		$("#bg_2").removeClass("slide-left-2");
+		$("#bg_2").removeClass("slide-right-2");
+		$("#bg_2").removeClass("slide-left-3");
+		$("#bg_2").removeClass("slide-right-3");
+		
+		$("#inside_bg").removeClass("slide-left");
+		$("#inside_bg").addClass("slide-right");
+		$("#inside_bg").removeClass("slide-left-2");
+		$("#inside_bg").removeClass("slide-right-2");
+		$("#inside_bg").removeClass("slide-left-3");
+		$("#inside_bg").removeClass("slide-right-3");
+		
+		$("#inside_bg_box").removeClass("slide-left");
+		$("#inside_bg_box").addClass("slide-right");
+		$("#inside_bg_box").removeClass("slide-left-2");
+		$("#inside_bg_box").removeClass("slide-right-2");
+		$("#inside_bg_box").removeClass("slide-left-3");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		
+		$("#work_bg").removeClass("slide-left");
+		$("#work_bg").addClass("slide-right");
+		$("#work_bg").removeClass("slide-left-2");
+		$("#work_bg").removeClass("slide-right-2");
+		$("#work_bg").removeClass("slide-left-3");
+		$("#work_bg").removeClass("slide-right-3");
+		
+		$("#work_bg_box").removeClass("slide-left");
+		$("#work_bg_box").addClass("slide-right");
+		$("#work_bg_box").removeClass("slide-left-2");
+		$("#work_bg_box").removeClass("slide-right-2");
+		$("#work_bg_box").removeClass("slide-left-3");
+		$("#work_bg_box").removeClass("slide-right-3");
+		
+		$("#vit-layer-click").hide();
+		$("#camap-layer-click").hide();
+		
+		$("#logo").removeClass("off");
+		$("#logo_2").addClass("off");
+		
+		$("#inside").removeClass("off");
+		$("#inside_2").addClass("off");
+		
+		$("#work_btt").removeClass("off");
+		$("#work_btt_2").addClass("off");
+	});
+</script>
+
+<!--Main - Inside <- Work-->
+<script type="text/javascript">
+	$("#inside_2").click(function(){
+		$("#bg_2").removeClass("slide-left");
+		$("#bg_2").removeClass("slide-right");
+		$("#bg_2").removeClass("slide-left-2");
+		$("#bg_2").removeClass("slide-right-2");
+		$("#bg_2").removeClass("slide-left-3");
+		$("#bg_2").addClass("slide-right-3");
+		
+		$("#inside_bg").removeClass("slide-left");
+		$("#inside_bg").removeClass("slide-right-3");
+		$("#inside_bg").removeClass("slide-left-2");
+		$("#inside_bg").removeClass("slide-right-2");
+		$("#inside_bg").removeClass("slide-left-3");
+		$("#inside_bg").addClass("slide-right-3");
+		
+		$("#inside_bg_box").removeClass("slide-left");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		$("#inside_bg_box").removeClass("slide-left-2");
+		$("#inside_bg_box").removeClass("slide-right-2");
+		$("#inside_bg_box").removeClass("slide-left-3");
+		$("#inside_bg_box").addClass("slide-right-3");
+		
+		$("#work_bg").removeClass("slide-left");
+		$("#work_bg").removeClass("slide-right");
+		$("#work_bg").removeClass("slide-left-2");
+		$("#work_bg").removeClass("slide-right-2");
+		$("#work_bg").removeClass("slide-left-3");
+		$("#work_bg").addClass("slide-right-3");
+		
+		$("#work_bg_box").removeClass("slide-left");
+		$("#work_bg_box").removeClass("slide-right");
+		$("#work_bg_box").removeClass("slide-left-2");
+		$("#work_bg_box").removeClass("slide-right-2");
+		$("#work_bg_box").removeClass("slide-left-3");
+		$("#work_bg_box").addClass("slide-right-3");
+		
+		$("#vit-layer-click").show();
+		$("#camap-layer-click").hide();
+		
+		$("#logo").removeClass("off");
+		$("#logo_2").addClass("off");
+		
+		$("#inside").addClass("off");
+		$("#inside_2").removeClass("off");
+		
+		$("#work_btt").addClass("off");
+		$("#work_btt_2").removeClass("off");
+	});
+</script>
+	
+<!--Main <- Inside <- Work-->
+<script type="text/javascript">
+	$("#logo_2").click(function(){
+		$("#bg_2").removeClass("slide-left");
+		$("#bg_2").removeClass("slide-right");
+		$("#bg_2").removeClass("slide-left-2");
+		$("#bg_2").addClass("slide-right-2");
+		$("#bg_2").removeClass("slide-left-3");
+		$("#bg_2").removeClass("slide-right-3");
+		
+		$("#inside_bg").removeClass("slide-left");
+		$("#inside_bg").removeClass("slide-right");
+		$("#inside_bg").removeClass("slide-left-2");
+		$("#inside_bg").addClass("slide-right-2");
+		$("#inside_bg").removeClass("slide-left-3");
+		$("#inside_bg").removeClass("slide-right-3");
+		
+		$("#inside_bg_box").removeClass("slide-left");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		$("#inside_bg_box").removeClass("slide-left-2");
+		$("#inside_bg_box").addClass("slide-right-2");
+		$("#inside_bg_box").removeClass("slide-left-3");
+		$("#inside_bg_box").removeClass("slide-right-3");
+		
+		$("#work_bg").removeClass("slide-left");
+		$("#work_bg").removeClass("slide-right");
+		$("#work_bg").removeClass("slide-left-2");
+		$("#work_bg").addClass("slide-right-2");
+		$("#work_bg").removeClass("slide-left-3");
+		$("#work_bg").removeClass("slide-right-3");
+		
+		$("#work_bg_box").removeClass("slide-left");
+		$("#work_bg_box").removeClass("slide-right");
+		$("#work_bg_box").removeClass("slide-left-2");
+		$("#work_bg_box").addClass("slide-right-2");
+		$("#work_bg_box").removeClass("slide-left-3");
+		$("#work_bg_box").removeClass("slide-right-3");
+		
+		$("#vit-layer-click").hide();
+		$("#camap-layer-click").hide();
+		
+		$("#logo").addClass("off");
+		$("#logo_2").removeClass("off");
+		
+		$("#inside").removeClass("off");
+		$("#inside_2").addClass("off");
+		
+		$("#work_btt").removeClass("off");
+		$("#work_btt_2").addClass("off");
+	});
+</script>
+	
+<!--Inside Info-->
+<script type="text/javascript">
+	$("#vit-layer-click").click(function(){
+		$("#inside_bg_info").removeClass("scale-down-ver-center");
+		$("#inside_bg_info").addClass("scale-up-ver-center");
+		$("#inside_bg_info").show();
+		$("#info").fadeIn(1300);
+		$("#header").fadeOut();
+		$("#container").fadeOut();
+		$("#vit-layer-click").hide();
+	});
+	
+	$("#cancel_2").click(function(){
+		$("#inside_bg_info").removeClass("scale-up-ver-center");
+		$("#inside_bg_info").addClass("scale-down-ver-center");
+		$("#info").fadeOut(300);
+		$("#header").fadeIn();
+		$("#container").fadeIn();
+		$("#vit-layer-click").show();
+	});
+</script>
+	
+<!--Work Info-->
+<script type="text/javascript">
+	$("#camap-layer-click").click(function(){
+		$("#work_bg_work").removeClass("scale-down-ver-center");
+		$("#work_bg_work").addClass("scale-up-ver-center");
+		$("#work_bg_work").show();
+		$("#work").fadeIn(1300);
+		$("#header").fadeOut();
+		$("#container").fadeOut();
+		$("#camap-layer-click").hide();
+	});
+	
+	$("#cancel_3").click(function(){
+		$("#work_bg_work").removeClass("scale-up-ver-center");
+		$("#work_bg_work").addClass("scale-down-ver-center");
+		$("#work").fadeOut(300);
+		$("#header").fadeIn();
+		$("#container").fadeIn();
+		$("#camap-layer-click").show();
+	});
+</script>
+	
+<!--Work Hover-->
+<script type="text/javascript">
+	$("#sohot").mouseover(function(){
+		$("#sohot_ic").show();
+		$("#enod_ic").hide();
+		$("#esl_ic").hide()
+	});
+	
+	$("#enod").mouseover(function(){
+		$("#sohot_ic").hide();
+		$("#enod_ic").show();
+		$("#esl_ic").hide()
+	});
+	
+	$("#esl").mouseover(function(){
+		$("#sohot_ic").hide();
+		$("#enod_ic").hide();
+		$("#esl_ic").show()
+	});
+</script>
+	
+<!--Video Info-->
+<script type="text/javascript">
+	$("#video_btt_1").click(function(){
+		$("#video_info").removeClass("scale-down-ver-center");
+		$("#video_info").addClass("scale-up-ver-center");
+		$("#video_info").show();
+		$("#video_content").fadeIn(1500);
+		$("#header").fadeOut();
+		$("#container").fadeOut();
+		$("#video_btt_1").hide();
+	});
+	
+	$("#cancel_4").click(function(){
+		$("#video_info").removeClass("scale-up-ver-center");
+		$("#video_info").addClass("scale-down-ver-center");
+		$("#video_content").fadeOut(100);
+		$("#header").fadeIn();
+		$("#container").fadeIn();
+		$("#video_btt_1").show();
+	});
+	
+	$("#video_btt_2").click(function(){
+		$("#video_info_2").removeClass("off");
+		$("#video_info_2").addClass("on");
+		$("#video_content_2").fadeIn(100);
+	});
+	
+	$("#cancel_5").click(function(){
+		$("#video_info_2").removeClass("on");
+		$("#video_info_2").addClass("off");
+		$("#video_content_2").fadeOut(100);
+	});
+	
+	$("#cancel_4").click(function(){
+	var $frame = $('iframe#video_2');
+		var vidsrc = $frame.attr('src');
+		$frame.attr('src',''); 
+		$frame.attr('src', vidsrc);
+	});
+	$("#cancel_5").click(function(){
+	var $frame = $('iframe#video_1');
+		var vidsrc = $frame.attr('src');
+		$frame.attr('src',''); 
+		$frame.attr('src', vidsrc);
+	});
+</script>
+
+<!--Parallax-->
+<script>
+var currentX = '';
+var currentY = '';
+var movementConstant = .015;
+$(document).mousemove(function(e) {
+  if(currentX == '') currentX = e.pageX;
+  var xdiff = e.pageX - currentX;
+  currentX = e.pageX;
+   if(currentY == '') currentY = e.pageY;
+  var ydiff = e.pageY - currentY;
+  currentY = e.pageY; 
+  $('.inside_bg_box div').each(function(i, el) {
+      var movement = (i + 1) * (xdiff * movementConstant);
+	  var movementy = (i + 1) * (ydiff * movementConstant);
+      var newX = $(el).position().left + movement;
+	  var newY = $(el).position().top + movementy;
+      $(el).css('left', newX + 'px');
+	  $(el).css('top', newY + 'px');
+  });
+  $('.work_bg_box div').each(function(i, el) {
+      var movement = (i + 1) * (xdiff * movementConstant);
+	  var movementy = (i + 1) * (ydiff * movementConstant);
+      var newX = $(el).position().left + movement;
+	  var newY = $(el).position().top + movementy;
+      $(el).css('left', newX + 'px');
+	  $(el).css('top', newY + 'px');
+  });
+});
+</script>
+	
+<!--Loader-->
+<script>
+var loader = document.getElementById('loader');
+
+window.addEventListener ("load", function() {
+loader.style.display = 'none';
+
+});	
+</script>
+	
+<!--Video Preload-->
+<script>
+  video.addEventListener('loadedmetadata', function() {
+    if (video.buffered.length === 0) return;
+
+    var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+    console.log(bufferedSeconds + ' seconds of video are ready to play!');
+  });
+</script>
+	
+<!--Video Background-->
+<script> 
+$( "#bg_2" ).hide();
+function run(){
+   $( "#bg_1" ).hide();
+    $( "#bg_2" ).show();
+    document.getElementById("bg_2").play();
+   };
+</script> 
+</body>
+</html>
